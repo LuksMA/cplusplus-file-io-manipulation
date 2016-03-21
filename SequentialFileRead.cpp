@@ -36,7 +36,7 @@ int main()
 
 	//print parsed data to stdout
 	int j = 0;
-	for (std::vector<std::string>::const_iterator i = data.begin(); i != data.end(); ++i) {
+	for (auto i = data.begin(); i != data.end(); ++i) {
 		std::cout << *i;
 		if (!(++j % 3)) //print a newrecord after processing three fields
 			std::cout << '\n';
